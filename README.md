@@ -27,23 +27,42 @@ git clone <repo-url> ~/positioning-brief
 ln -s ~/positioning-brief ~/.claude/skills/positioning-brief
 ```
 
-## What it does
+## When it triggers
 
-1. Reads existing page, flags internal names and unsourced numbers.
-2. Asks who the reader is, what the page should achieve, and offers concrete
-   options based on what it found. You pick or correct.
-3. Researches the reader's real problems: published failures, practitioner reports,
+The skill handles three entry points:
+
+| You say | What happens |
+|---|---|
+| "Improve this page" / "rewrite these docs" | **Entry A.** Audits existing text, builds a brief, proposes how to rewrite |
+| "Write a landing page for X" / "write docs" | **Entry B.** Skips audit (nothing exists), builds brief from scratch |
+| "I have a brief, write the page" | **Entry C.** Validates existing brief, proposes deliverables, writes |
+
+## How it works
+
+### Brief phase (steps 1-5)
+
+1. **Audit** existing text: flags internal names, unsourced numbers, demo output
+   presented as results. Skipped when writing from scratch.
+2. **Ask the reader questions** with concrete options to pick from: reader roles,
+   page goals (installs, signups, docs visits), awareness level, scope. You pick
+   or correct, not start from blank.
+3. **Research** the reader's real problems: published failures, practitioner reports,
    competitor docs. Collects the reader's own words from issues and forums.
-4. Maps each claimed benefit to code that backs it. No code, no claim.
-5. Writes a brief (template in `SKILL.md`) and hands it to you. No page until you
-   confirm reader, moment, and differentiation.
-6. Writes from the brief: outline first, then copy. Internal names stay in code
-   blocks and reference docs. Docs split by Diataxis. Landing page links to
-   tutorial, not reference.
-7. Checks: runs every quoted example, then a naive-reader test against the brief's
+4. **Map** each claimed benefit to code. No code, no claim.
+5. **Write the brief** and hand it to you. No page until you confirm reader, moment,
+   and differentiation.
+
+### Write phase (steps 6-9)
+
+6. **Propose deliverables** based on the brief. Offers options: landing page,
+   tutorial, integration guide, README rewrite, reference docs, or a combination
+   with suggested order. For rewrites, shows what changes section by section. You
+   pick, then it outlines before writing.
+7. **Check:** runs every quoted example, then a naive-reader test against the brief's
    "30 seconds" section.
-8. Recommends testing with 2-3 real readers for 5 seconds each.
-9. Keeps the brief dated. Product or competitors change: update brief first, then pages.
+8. **Recommend real-reader testing:** 2-3 matching people, 5 seconds each.
+9. **Keep current:** brief and pages carry a date. Product changes go to the brief
+   first, then pages.
 
 ## Brief sections
 

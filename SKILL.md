@@ -11,21 +11,46 @@ confirm it, then write pages and docs from it.
 
 Keep the brief in the project next to the page it drives, e.g. `docs/<page>-brief.md`.
 
+## Entry points
+
+The skill handles three scenarios. Identify which one applies and start there.
+
+**A. Rewrite existing text.** User shows a page or doc, or asks to improve it.
+Start at step 1 (audit), then steps 2-5 (brief), then steps 6-9 (write).
+
+**B. Write from scratch.** User asks to write a landing page, docs, or README for
+something that has no text yet. Skip step 1 (nothing to audit). Start at step 2
+(ask who the reader is), then steps 3-5 (brief), then steps 6-9 (write).
+
+**C. Brief already exists.** User has a brief from a previous run and asks to write
+from it. Read the brief, check it has all template sections filled. If any section
+is empty or stale, flag it and ask the user before continuing. Then start at step 6.
+
 ## Process
 
-1. **Read what exists, list what's wrong.** Read the current page or doc as plain text.
-   Mark every internal identifier shown to the reader, every number and every claim.
-   Check each number against the repo (`grep` the value). A number with no source in
-   the repo is removed or attributed to its owner. Demo, stub or mock output is
-   wiring, not a result.
+### Build the brief (steps 1-5)
+
+1. **Audit existing text.** *(Skip for entry B.)* Read the current page or doc as
+   plain text. Mark every internal identifier shown to the reader, every number and
+   every claim. Check each number against the repo (`grep` the value). A number with
+   no source in the repo is removed or attributed to its owner. Demo, stub or mock
+   output is wiring, not a result. Hand the user a short list of what's wrong before
+   moving on.
 2. **Ask the user who the reader is and what the page is for.** Reader, goal and
-   positioning are the user's call. Ask in one message: who reads it, what they already
-   know, what they want to do, and what the page must achieve. Offer concrete options
-   based on what you learned in step 1: reader roles you can infer from the existing
-   page, likely goals (installs, signups, docs visits, demo requests), awareness levels
-   (knows the problem / knows solutions exist / knows us). Let the user pick or correct,
-   not start from blank. Draft only after that; mark your own guesses `[?]`. One brief
-   per audience: two different readers means two briefs, not one blended page.
+   positioning are the user's call. Ask in one message, and offer concrete options
+   to pick from based on what you know so far:
+   - **Reader:** roles you can infer from the existing page or repo (e.g. "backend
+     developer using framework X", "team lead evaluating tools", "existing user
+     upgrading"). Include 2-3 options plus "other".
+   - **Goal:** what the page must achieve: installs, signups, docs visits, demo
+     requests, upgrade to paid. Pick the 2-3 most likely.
+   - **Awareness:** does the reader know they have the problem / know solutions
+     exist / know this product? This sets where the page starts.
+   - **Scope:** one page or several (landing + tutorial, docs set, README only).
+
+   Let the user pick, combine, or correct. Do not draft until they confirm. Mark
+   your own guesses `[?]`. One brief per audience: two different readers means two
+   briefs, not one blended page.
 3. **Research the reader's real problems and words.** Search for published failures,
    surveys, practitioner reports and papers in the reader's area. Keep numbers and
    links. Collect the reader's own phrasing from issues, forums, discussions and support
@@ -35,11 +60,27 @@ Keep the brief in the project next to the page it drives, e.g. `docs/<page>-brie
 4. **Map each problem to a mechanism in the code.** For every claim, find the code that
    makes it true. If nothing backs it, drop the claim or list it under "does not do".
 5. **Write the brief** (template below) and hand it to the user to edit. Do not write
-   the page until reader, moment and differentiation are confirmed.
-6. **Write from the brief.** Outline first: one idea per section, a heading plus one
-   line each. Then copy. Use the brief's dictionary; internal names stay in code blocks
-   and reference docs. Split docs by Diátaxis (tutorial, how-to, reference,
-   explanation). A landing page links to a tutorial, not to the reference.
+   anything until reader, moment and differentiation are confirmed.
+
+### Write from the brief (steps 6-9)
+
+6. **Propose what to write.** Based on the brief's goal (section 0), reader (section 1)
+   and scope, propose specific deliverables. Offer options:
+   - **Landing page** if goal is installs, signups, or awareness.
+   - **Tutorial** ("get started in N minutes") if goal is first use.
+   - **Integration guide** if reader uses a specific SDK or framework.
+   - **README rewrite** if existing README is the main entry point.
+   - **Reference docs** if reader needs API surface, not narrative.
+   - **Several of the above** with suggested order (landing first, tutorial second, etc.).
+
+   For a rewrite (entry A): show what changes compared to the existing text, section by
+   section. Name what stays, what gets rewritten, and what gets removed.
+
+   Let the user pick. Then for each deliverable: outline first (one idea per section,
+   a heading plus one line each), get a nod, then write. Use the brief's dictionary;
+   internal names stay in code blocks and reference docs. Split docs by Diataxis
+   (tutorial, how-to, reference, explanation). A landing page links to a tutorial,
+   not to the reference.
 7. **Check.** Run every example the page quotes and paste the real output. Then a naive
    reader check: a fresh agent or prompt that gets only the page, no repo, retells what
    the product does, for whom and how it differs, and lists every term it didn't
