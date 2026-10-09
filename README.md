@@ -3,7 +3,7 @@
 A Claude Code skill that writes a positioning brief before any landing page, docs
 page, or README. The brief forces you to answer: who reads this, what problem brought
 them here, what they use today, and what evidence you actually have. Pages and docs
-are written from the brief, not from the code.
+are written from the brief.
 
 ## Why
 
