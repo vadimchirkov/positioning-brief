@@ -1,6 +1,6 @@
 ---
 name: positioning-brief
-description: Build a one-page brief before writing or rewriting a landing page, product or integration page, README or user docs for any project. Use when asked to improve a site or docs, write for a new audience or integration, or when existing text describes internals instead of what the reader needs. The brief comes first; pages and docs are generated from it.
+description: Build a one-page brief before writing or rewriting any text meant for people: landing pages, product pages, docs, READMEs, guides, announcements, or integration pages. Use when asked to improve existing text, write for a new audience, or when existing text describes internals instead of what the reader needs. The brief comes first; text is generated from it.
 ---
 
 # Positioning brief
