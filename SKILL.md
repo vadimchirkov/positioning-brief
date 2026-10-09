@@ -5,9 +5,10 @@ description: Build a one-page brief before writing or rewriting a landing page, 
 
 # Positioning brief
 
-Text generated from the code describes the code. Readers need their problem, the
-alternative they use today, and why to switch. Write the brief first, get the user to
-confirm it, then write pages and docs from it.
+Generated text describes the internals: code structure, technical details, how things
+are built. Readers need their problem, the alternative they use today, and why to
+switch. Write the brief first, get the user to confirm it, then write pages and docs
+from it.
 
 Keep the brief in the project next to the page it drives, e.g. `docs/<page>-brief.md`.
 

@@ -7,9 +7,10 @@ are written from the brief, not from the code.
 
 ## Why
 
-Text generated from code describes the code. It uses internal names, quotes demo
-output as results, and explains things the reader already knows while skipping what
-they don't. A brief catches this before you write.
+Generated text describes the internals: code structure, technical details, how things
+are built. It uses internal names, quotes demo output as results, and explains things
+the reader already knows while skipping what they don't. A brief catches this before
+you write.
 
 ## Install
 
