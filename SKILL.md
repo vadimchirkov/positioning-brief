@@ -72,8 +72,9 @@ is empty or stale, flag it and ask the user before continuing. Then start at ste
    threads; headings use their words, not ours. Read competitors' docs, not their
    marketing, to learn what they actually do and where they stop. Date every external
    fact: competitors and numbers change.
-4. **Map each problem to a mechanism in the code.** For every claim, find the code that
-   makes it true. If nothing backs it, drop the claim or list it under "does not do".
+4. **Map each problem to a verifiable fact.** For every claim, find what makes it true:
+   code, data, a measurement, a policy. If nothing backs it, drop the claim or list it
+   under "does not do".
 5. **Write the brief** (template below) and hand it to the user to edit. Do not write
    anything until reader, moment and differentiation are confirmed.
 

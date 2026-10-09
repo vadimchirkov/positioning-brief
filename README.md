@@ -51,7 +51,7 @@ The skill handles three entry points:
    or correct, not start from blank.
 3. **Research** the reader's real problems: published failures, practitioner reports,
    competitor docs. Collects the reader's own words from issues and forums.
-4. **Map** each claimed benefit to code. No code, no claim.
+4. **Map** each claimed benefit to a verifiable fact. No fact, no claim.
 5. **Write the brief** and hand it to you. No page until you confirm reader, moment,
    and differentiation.
 
