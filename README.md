@@ -33,8 +33,8 @@ The skill handles three entry points:
 
 | You say | What happens |
 |---|---|
-| "Improve this page" / "rewrite these docs" | **Entry A.** Audits existing text, builds a brief, proposes how to rewrite |
-| "Write a landing page for X" / "write docs" | **Entry B.** Skips audit (nothing exists), builds brief from scratch |
+| "Improve this page" / "rewrite these docs" / "look at our site" | **Entry A.** Audits all existing content (one page, multiple pages, a docs folder), builds a brief, proposes what to rewrite, merge, split, or drop |
+| "Write a landing page for X" / "I need docs for Y" | **Entry B.** No text exists yet. Skips audit, builds brief from the idea |
 | "I have a brief, write the page" | **Entry C.** Validates existing brief, proposes deliverables, writes |
 
 ## How it works

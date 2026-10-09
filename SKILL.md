@@ -13,14 +13,16 @@ Keep the brief in the project next to the page it drives, e.g. `docs/<page>-brie
 
 ## Entry points
 
-The skill handles three scenarios. Identify which one applies and start there.
+Identify what the user brought and start there.
 
-**A. Rewrite existing text.** User shows a page or doc, or asks to improve it.
-Start at step 1 (audit), then steps 2-5 (brief), then steps 6-9 (write).
+**A. Existing content.** A page, several pages of a site, a docs folder, a README,
+or any combination. Read all of it in step 1, audit as a set. One brief covers the
+whole surface; step 6 proposes which pages to rewrite, merge, split, or drop.
 
-**B. Write from scratch.** User asks to write a landing page, docs, or README for
-something that has no text yet. Skip step 1 (nothing to audit). Start at step 2
-(ask who the reader is), then steps 3-5 (brief), then steps 6-9 (write).
+**B. An idea.** User describes what they want in chat: "make a landing page for X",
+"write docs for our SDK integration", "I need a page that explains Y". No text
+exists yet, maybe no repo either. Skip step 1. Start at step 2 with what the user
+said as context.
 
 **C. Brief already exists.** User has a brief from a previous run and asks to write
 from it. Read the brief, check it has all template sections filled. If any section
@@ -30,12 +32,14 @@ is empty or stale, flag it and ask the user before continuing. Then start at ste
 
 ### Build the brief (steps 1-5)
 
-1. **Audit existing text.** *(Skip for entry B.)* Read the current page or doc as
-   plain text. Mark every internal identifier shown to the reader, every number and
-   every claim. Check each number against the repo (`grep` the value). A number with
-   no source in the repo is removed or attributed to its owner. Demo, stub or mock
-   output is wiring, not a result. Hand the user a short list of what's wrong before
-   moving on.
+1. **Audit existing content.** *(Skip for entry B.)* Read every page or doc the user
+   pointed at. For a site or docs folder, read all files and note how they relate:
+   what overlaps, what contradicts, what's missing. For each page, mark every internal
+   identifier shown to the reader, every number and every claim. Check each number
+   against the repo (`grep` the value). A number with no source in the repo is removed
+   or attributed to its owner. Demo, stub or mock output is wiring, not a result.
+   Hand the user a short summary: what's wrong, what overlaps across pages, and which
+   pages serve the same reader vs. different audiences.
 2. **Ask the user who the reader is and what the page is for.** Reader, goal and
    positioning are the user's call. Ask in one message, and offer concrete options
    to pick from based on what you know so far:
