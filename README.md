@@ -25,7 +25,7 @@ cp SKILL.md ~/.claude/skills/positioning-brief/
 Or clone and symlink:
 
 ```sh
-git clone <repo-url> ~/positioning-brief
+git clone https://github.com/vadimchirkov/positioning-brief.git ~/positioning-brief
 ln -s ~/positioning-brief ~/.claude/skills/positioning-brief
 ```
 
