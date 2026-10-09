@@ -15,14 +15,24 @@ Keep the brief in the project next to the page it drives, e.g. `docs/<page>-brie
 
 Identify what the user brought and start there.
 
-**A. Existing content.** A page, several pages of a site, a docs folder, a README,
-or any combination. Read all of it in step 1, audit as a set. One brief covers the
-whole surface; step 6 proposes which pages to rewrite, merge, split, or drop.
+**A. Specific content.** User points at a page, several pages, a docs folder, or a
+README. Read all of it in step 1, audit as a set. One brief covers the whole
+surface; step 6 proposes which pages to rewrite, merge, split, or drop.
 
-**B. An idea.** User describes what they want in chat: "make a landing page for X",
-"write docs for our SDK integration", "I need a page that explains Y". No text
-exists yet, maybe no repo either. Skip step 1. Start at step 2 with what the user
-said as context.
+**B. Discovery.** User says "look at what docs we have" or "let's improve our
+texts" without pointing at specific files. Find all user-facing text in the project:
+docs/, README, site pages, examples with READMEs. List what exists with a one-line
+summary of each. Propose which to tackle first based on what's weakest or most
+visible. After the user picks, continue as entry A.
+
+**C. An idea.** User describes what they want: "make a landing page for X", "write
+docs for our SDK integration", "I need a page that explains Y". No text exists yet,
+maybe no repo either. Skip step 1. Start at step 2 with what the user said as
+context.
+
+**D. Brief already exists.** User has a brief from a previous run and asks to write
+from it. Read the brief, check it has all template sections filled. If any section
+is empty or stale, flag it and ask the user before continuing. Then start at step 6.
 
 **C. Brief already exists.** User has a brief from a previous run and asks to write
 from it. Read the brief, check it has all template sections filled. If any section
@@ -32,7 +42,7 @@ is empty or stale, flag it and ask the user before continuing. Then start at ste
 
 ### Build the brief (steps 1-5)
 
-1. **Audit existing content.** *(Skip for entry B.)* Read every page or doc the user
+1. **Audit existing content.** *(Skip for entry C.)* Read every page or doc the user
    pointed at. For a site or docs folder, read all files and note how they relate:
    what overlaps, what contradicts, what's missing. For each page, mark every internal
    identifier shown to the reader, every number and every claim. Check each number

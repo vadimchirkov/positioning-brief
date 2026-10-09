@@ -33,9 +33,10 @@ The skill handles three entry points:
 
 | You say | What happens |
 |---|---|
-| "Improve this page" / "rewrite these docs" / "look at our site" | **Entry A.** Audits all existing content (one page, multiple pages, a docs folder), builds a brief, proposes what to rewrite, merge, split, or drop |
-| "Write a landing page for X" / "I need docs for Y" | **Entry B.** No text exists yet. Skips audit, builds brief from the idea |
-| "I have a brief, write the page" | **Entry C.** Validates existing brief, proposes deliverables, writes |
+| "Improve this page" / "rewrite these docs" | **Entry A.** Audits specific content you pointed at, builds a brief, proposes what to rewrite, merge, split, or drop |
+| "Look at what docs we have" / "let's improve our texts" | **Entry B.** Finds all user-facing text in the project, lists what exists, proposes where to start. Then continues as A |
+| "Write a landing page for X" / "I need docs for Y" | **Entry C.** No text exists yet. Skips audit, builds brief from the idea |
+| "I have a brief, write the page" | **Entry D.** Validates existing brief, proposes deliverables, writes |
 
 ## How it works
 
