@@ -9,9 +9,9 @@ written from the brief.
 ## Why
 
 Generated text describes the internals: code structure, technical details, how things
-are built. It uses internal names, quotes demo output as results, and explains things
-the reader already knows while skipping what they don't. A brief catches this before
-you write.
+are built. It explains from the technical side, but readers think in value: what
+problem it solves, what changes for them, why they should care. A brief catches this
+gap before you write.
 
 ## Install
 
