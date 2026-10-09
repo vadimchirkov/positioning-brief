@@ -1,14 +1,13 @@
 ---
 name: positioning-brief
-description: Build a one-page brief before writing or rewriting any text meant for people: landing pages, product pages, docs, READMEs, guides, announcements, or integration pages. Use when asked to improve existing text, write for a new audience, or when existing text describes internals instead of what the reader needs. The brief comes first; text is generated from it.
+description: Build a one-page brief before writing or rewriting any text meant for people: landing pages, product pages, docs, READMEs, guides, announcements, or integration pages. Use when asked to improve existing text, write for a new audience, or when existing text explains how things work instead of what changes for the reader. The brief comes first; text is generated from it.
 ---
 
 # Positioning brief
 
-Generated text describes the internals: code structure, technical details, how things
-are built. Readers need their problem, the alternative they use today, and why to
-switch. Write the brief first, get the user to confirm it, then write pages and docs
-from it.
+Generated text explains how things work. Readers care about what changes for them:
+what problem goes away, what gets easier, why to switch. Write the brief first, get
+the user to confirm it, then write from it.
 
 Keep the brief in the project next to the page it drives, e.g. `docs/<page>-brief.md`.
 
