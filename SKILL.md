@@ -91,8 +91,9 @@ is empty or stale, flag it and ask the user before continuing. Then start at ste
    For a rewrite (entry A): show what changes compared to the existing text, section by
    section. Name what stays, what gets rewritten, and what gets removed.
 
-   Let the user pick. Then for each deliverable: outline first (one idea per section,
-   a heading plus one line each), get a nod, then write. Use the brief's dictionary;
+   Let the user pick. Then for each deliverable: outline first, ordered by section 5
+   (reader's priorities), one idea per section, a heading plus one line each. Get a
+   nod, then write. Use the brief's dictionary;
    internal names stay in code blocks and reference docs. Split docs by Diataxis
    (tutorial, how-to, reference, explanation). A landing page links to a tutorial,
    not to the reference.
@@ -135,26 +136,34 @@ a new kind of thing, name the known category it differs from and how.
 The main idea in one sentence. Then problem from section 2 → mechanism that answers
 it. Then what the product does not do, stated plainly.
 
-## 5. Evidence
+## 5. Priority for the reader
+Rank what matters most to the reader, not what's most impressive technically.
+1. ...
+2. ...
+3. ...
+This order drives page structure: first section covers #1, last section covers the
+lowest priority. Anything below the line goes to docs, not the page.
+
+## 6. Evidence
 Only measured results, each with a link to method and raw numbers. Then other proof if
 real: named users, adoption, quotes with permission. List what may not be claimed
 (unmeasured, demo-only, unsourced) and which measurement would close the biggest gap.
 
-## 6. Objections
+## 7. Objections
 The reader's questions with short, factual answers (effort, cost, data needed,
 comparison with the alternative).
 
-## 7. In 30 seconds the reader understands
+## 8. In 30 seconds the reader understands
 Three or four points. This is the test the naive reader must pass.
 
-## 8. One action
+## 9. One action
 The primary CTA and a second one. Prefer "run X" or "try X" over "star us".
 
-## 9. Dictionary
+## 10. Dictionary
 | In code | On the page |
 Internal names → the reader's words. Names that never appear on the page.
 
-## 10. Out of scope
+## 11. Out of scope
 What goes to reference or explanation docs, not to the page.
 ```
 

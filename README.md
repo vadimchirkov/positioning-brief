@@ -76,12 +76,13 @@ The skill handles three entry points:
 | 2 | Moment | When they look for this, with sourced examples |
 | 3 | What they use today | Each alternative from its own docs, where it stops |
 | 4 | What we have | Category, main idea, problem-to-mechanism map, what it doesn't do |
-| 5 | Evidence | Measured results only; what can't be claimed; biggest gap |
-| 6 | Objections | Reader's questions with short factual answers |
-| 7 | In 30 seconds | 3-4 points the naive reader must get right |
-| 8 | One action | Primary CTA and a fallback |
-| 9 | Dictionary | Internal names to reader's words |
-| 10 | Out of scope | Goes to reference/explanation docs, not the page |
+| 5 | Priority for the reader | Ranked list of what matters most; drives page order |
+| 6 | Evidence | Measured results only; what can't be claimed; biggest gap |
+| 7 | Objections | Reader's questions with short factual answers |
+| 8 | In 30 seconds | 3-4 points the naive reader must get right |
+| 9 | One action | Primary CTA and a fallback |
+| 10 | Dictionary | Internal names to reader's words |
+| 11 | Out of scope | Goes to reference/explanation docs, not the page |
 
 ## Rules
 
