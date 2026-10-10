@@ -91,17 +91,26 @@ is empty or stale, flag it and ask the user before continuing. Then start at ste
    For a rewrite (entry A): show what changes compared to the existing text, section by
    section. Name what stays, what gets rewritten, and what gets removed.
 
-   Let the user pick. Then for each deliverable: outline first, ordered by section 5
-   (reader's priorities), one idea per section, a heading plus one line each. Get a
-   nod, then write. Use the brief's dictionary;
-   internal names stay in code blocks and reference docs. Split docs by Diataxis
-   (tutorial, how-to, reference, explanation). A landing page links to a tutorial,
-   not to the reference.
+   Let the user pick. Then for each deliverable: outline first. Structure follows the
+   reader's thinking, not the product's architecture. Use section 5 (priorities) for
+   order, section 10 (dictionary) for language: headings from column 2, descriptions
+   from column 3. The reader should see their questions answered in the order they
+   ask them, not a tour of features. One idea per section, a heading plus one line
+   each. Get a nod, then write. Internal names stay in code blocks and reference docs.
+   Split docs by Diataxis (tutorial, how-to, reference, explanation). A landing page
+   links to a tutorial, not to the reference.
 7. **Check.** Run every example the page quotes and paste the real output. Then a naive
-   reader check: a fresh agent or prompt that gets only the page, no repo, retells what
-   the product does, for whom and how it differs, and lists every term it didn't
-   understand. Compare with the brief's "30 seconds" section and rewrite where they
-   differ. Finish with a style pass under the project's writing rules, if it has any.
+   reader check: a fresh agent or prompt that gets only the page, no repo, answers:
+   - What does this do? *(must match section 8 of the brief)*
+   - Who is it for?
+   - Why would I use it instead of what I have?
+   - What's unclear, vague, or abstract? *(flag every sentence that doesn't name a
+     concrete thing, number, or action)*
+   - Does the page feel like one coherent story or a list of disconnected features?
+
+   Rewrite what they flag. Every section must be clear on its own: no sentence that
+   needs another section to make sense. Finish with a style pass under the project's
+   writing rules, if it has any.
 8. **Test with real readers.** Show the page to two or three people who match section 1
    for five seconds, then ask what it is, who it is for and whether they would try it.
    No agent replaces this; if it can't happen, say so in the handoff.
@@ -160,8 +169,10 @@ Three or four points. This is the test the naive reader must pass.
 The primary CTA and a second one. Prefer "run X" or "try X" over "star us".
 
 ## 10. Dictionary
-| In code | On the page |
-Internal names → the reader's words. Names that never appear on the page.
+| Internal | Reader's word | Why they care |
+Translate names AND frame value. "gate" is not just "verification" - it's "know
+before you ship whether the change is safe." Headings and descriptions on the page
+come from columns 2 and 3, not column 1.
 
 ## 11. Out of scope
 What goes to reference or explanation docs, not to the page.
@@ -176,5 +187,12 @@ What goes to reference or explanation docs, not to the page.
   stay on the page.
 - When evidence is thin for the chosen reader, name the missing measurement and propose
   the run. Do not fill the gap with copy.
-- Concrete numbers and names over adjectives. Follow the project's writing rules
-  (AGENTS.md, CLAUDE.md, style guide) when it has them.
+- Concrete numbers and names over adjectives. Every claim either names a specific
+  thing or gives a number; "powerful", "flexible", "robust" say nothing.
+- Every page reads as one story, not a feature list. Sections connect: each one
+  follows from the previous. If removing a section doesn't break the flow, it
+  probably shouldn't be there.
+- Each section is clear on its own. No sentence that requires context from another
+  section to make sense.
+- Follow the project's writing rules (AGENTS.md, CLAUDE.md, style guide) when it
+  has them.

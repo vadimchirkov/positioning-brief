@@ -81,7 +81,7 @@ The skill handles three entry points:
 | 7 | Objections | Reader's questions with short factual answers |
 | 8 | In 30 seconds | 3-4 points the naive reader must get right |
 | 9 | One action | Primary CTA and a fallback |
-| 10 | Dictionary | Internal names to reader's words |
+| 10 | Dictionary | Internal name, reader's word, and why they care |
 | 11 | Out of scope | Goes to reference/explanation docs, not the page |
 
 ## Rules
